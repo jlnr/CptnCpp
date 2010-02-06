@@ -16,10 +16,8 @@
 
 
 #include "fpsCounter.hpp"
-#include "Gosu-PostProcessing.hpp"
 
 
-#include "Shadows.hpp"
 
 #include "Gem.hpp"
 #include "Map.hpp"

@@ -10,19 +10,19 @@ class Window : public Gosu::Window
 
 		Map *map;
 		CptnRuby *cptnruby;
-		Gosu::ShadowGeometry *foo;
+//		Gosu::ShadowGeometry *foo;
 
 	public:
 		Window()
 		 :	Gosu::Window(800, 600, false)
 		{
-			glewInit();
+//			glewInit();
 			this->font = new Gosu::Font(graphics(), Gosu::defaultFontName(), 20);
 			this->fps = new Gosu::fpsCounter(&graphics(), 800-210, 10, 200, 100);
 			this->map = new Map(graphics(), L"data/CptnRuby Map.txt");
 			this->cptnruby = new CptnRuby(graphics(), this->map, 400, 100);
 
-			this->foo = new Gosu::ShadowGeometry();
+//			this->foo = new Gosu::ShadowGeometry();
 		}
 
 		void draw()
